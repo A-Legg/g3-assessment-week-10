@@ -1,0 +1,31 @@
+<h1>New Gif</h1>
+
+<%= form_for @gif, url: root_path do |f| %>
+  <% if @gif.errors.any? %>
+    <div class="errors">
+      <p>URL can't be blank</p>
+    </div>
+    <% end %>
+
+
+    <% if @gif.errors.any? %>
+      <div class="errors">
+        <p>Title can't be blank</p>
+      </div>
+      <% end %>
+
+
+<div>
+  <%= f.label "Url" %>
+  <%= f.text_field :url, autofocus: true %>
+</div>
+<div>
+  <%= f.label "Title" %>
+  <%= f.text_field :title, autofocus: true %>
+</div>
+ <div>
+
+   <%= f.submit "Create gif" %>
+ </div>
+
+<% end %>

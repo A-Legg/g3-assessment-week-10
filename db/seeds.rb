@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Gif.destroy_all
+
+
+
+
+Gif.create!(url: "http://www.elle.com/cm/elle/images/3r/Cryinggifs_01_1.gif", title: "first gif")
